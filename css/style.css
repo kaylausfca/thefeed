@@ -1,6 +1,10 @@
+/* fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap'); 
 
+
+/* main sections/body */
 
 body {
     background-color: #FAF3E3;
@@ -26,6 +30,8 @@ nav {
     padding: 3%;
     height: 100vh;
     position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
     text-align: center;
     top: 0px;
     left: 0px;
@@ -50,44 +56,76 @@ main {
 }
 
 
+/* sections */
+
 section {
     text-align: center;
     align-items: center;
-    border: 1px dashed #7AAF9C;
-    margin: 5%;
-    padding: 1% 0%;
 }
 
-section img {
-    text-align: center;
-    background-color: #7AAF9C;
-    padding: 1.5%;
+section div {
+    padding: 0%;
+    width: fit-content;
+    margin: auto;
 }
 
 .vertical {
-    text-align: center;
-    align-items: center;
-    width: 325px;
     border: 1px dashed #7AAF9C;
     margin: 5%;
+    padding: 1% 0%;
+    width: 325px;
+}
+
+.vertical img {
+    background-color: #7AAF9C;
+    padding: 3%;
+    margin-top: 1%;
+}
+
+.vertical video {
+    background-color: #7AAF9C;
+    padding: 3%; 
+    margin-top: 1%; 
 }
 
 .horizontal {
-    text-align: center;
-    align-items: center;
-    width: 700px;
     border: 1px dashed #7AAF9C;
     margin: 5%;
+    padding: 1% 0%;
+    width: 700px;
 }
 
-video {
+.horizontal img {
     background-color: #7AAF9C;
     padding: 1.5%;
+    margin-top: 1%;
 }
 
-a {
-    text-decoration: none;
-    color-scheme: #CC401B;
+.horizontal video {
+    background-color: #7AAF9C;
+    padding: 1.5%; 
+    margin-top: 1%;
+}
+
+section img:hover {
+    opacity: 85%;
+}
+
+section video:hover {
+    opacity: 85%;
+}
+
+
+/* additional styling */
+
+footer {
+    padding: 2%;
+    text-align: right;
+    margin: 3%;
+}
+
+footer:hover {
+    transform: scale(1.05);
 }
 
 hr {
@@ -97,10 +135,9 @@ hr {
     border: none;
 }
 
-footer {
-    padding: 2%;
-    text-align: right;
-    max-width: 88%;
+a {
+    text-decoration: none;
+    color: #CC401B;
 }
 
 h1 {
@@ -122,14 +159,30 @@ h2 {
     text-align: center;
 }
 
+
+/* ids */
+
+#gif {
+    margin: auto;
+}
+
 #friends {
     border: 1px dashed #7AAF9C;
     padding: 2%;
+    margin-bottom: 30%;
 }
 
-#gif {
-
+#title {
+    border: none;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
+
+
+/* classes */
 
 .top-text {
     color: #CC401B;
@@ -147,8 +200,6 @@ h2 {
 .caption {
     font-size: 28px;
     font-weight: normal;
-    text-align: left;
-    padding-left: 8%;
     margin: 0%;
     margin-top: 3%;
 }
@@ -157,7 +208,6 @@ h2 {
     font-size: 18px;
     font-weight: normal;
     text-align: left;
-    padding-left: 8%;
     margin: 0%;
     margin-bottom: 3%;
 }
