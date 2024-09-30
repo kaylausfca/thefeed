@@ -16,7 +16,7 @@ body {
 
 header {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 15%;
     justify-content: center;
 }
 
@@ -26,17 +26,14 @@ header img:hover {
 
 nav {
     background-color: #FAF3E3;
-    max-width: 20%;
-    padding: 3%;
+    max-width: 25%;
     height: 100vh;
     position: fixed;
     overflow-y: scroll;
     overflow-x: hidden;
     text-align: center;
-    top: 0px;
-    left: 0px;
-    margin-left: 4%;
-    background-color: plum;
+    margin-left: 3%;
+    margin-right: 1%;
 }
 
 nav img:hover {
@@ -53,7 +50,6 @@ main {
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-around;
-    align-items: center;
 }
 
 
@@ -62,47 +58,53 @@ main {
 section {
     text-align: center;
     align-items: center;
-}
-
-section div {
-    padding: 0%;
-    width: fit-content;
-    margin: auto;
+    justify-content: center;
+    margin: 5% 2%;
 }
 
 .vertical {
+    margin: 5%;
+    width: 365px;
+}
+
+.invertical {
     border: 1px dashed #7AAF9C;
     margin: 5%;
     padding: 1% 0%;
     width: 325px;
 }
 
-.vertical img {
+.invertical img {
     background-color: #7AAF9C;
     padding: 3%;
-    margin-top: 1%;
+    margin-top: 3%;
 }
 
-.vertical video {
+.invertical video {
     background-color: #7AAF9C;
     padding: 3%; 
-    margin-top: 1%; 
+    margin-top: 3%; 
 }
 
 .horizontal {
+    margin: 3%;
+    width: 740px; 
+}
+
+.inhorizontal {
     border: 1px dashed #7AAF9C;
-    margin: 5%;
+    margin: 2.5%;
     padding: 1% 0%;
     width: 700px;
 }
 
-.horizontal img {
+.inhorizontal img {
     background-color: #7AAF9C;
     padding: 1.5%;
     margin-top: 1%;
 }
 
-.horizontal video {
+.inhorizontal video {
     background-color: #7AAF9C;
     padding: 1.5%; 
     margin-top: 1%;
@@ -116,23 +118,21 @@ section video:hover {
     opacity: 85%;
 }
 
+.avocado {
+    text-align: right;
+    padding: 0%;
+    margin-right: 25px;
+}
+
+.avocado img:hover {
+    transform: scale(1.1);
+}
 
 /* additional styling */
 
-header {
-    margin: auto;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    width: 100%;
-    
-}
-
 footer {
-    padding: 2%;
-    text-align: right;
-    margin: 3%;
-    padding-left: 15%;
-    padding-right: 15%;
+    text-align: center;
+    margin: 10% 20% 0% 20%;
 }
 
 footer:hover {
@@ -168,19 +168,33 @@ h2 {
     font-weight: normal;
     color: #CC401B;
     text-align: center;
+    padding: 1%;
 }
 
+::-webkit-scrollbar {
+    display: none;
+  }
+  
 
 /* ids & classes */
 
-#gif {
+#header {
     margin: auto;
+    margin-top: 1%;
+    margin-bottom: 8%;
+    width: 100%;
+}
+
+#gif {
+    margin-top: 20%;
 }
 
 #friends {
     border: 1px dashed #7AAF9C;
-    padding: 2%;
-    margin-bottom: 30%;
+    padding: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10%;
 }
 
 .top-text {
@@ -196,6 +210,12 @@ h2 {
     font-size: 20px;
 }
 
+.text {
+    padding: 0%;
+    width: fit-content;
+    margin: auto;
+}
+
 .caption {
     font-size: 28px;
     font-weight: normal;
@@ -208,5 +228,12 @@ h2 {
     font-weight: normal;
     text-align: left;
     margin: 0%;
+}
+
+.vertical .text {
+    margin-bottom: 6%;
+}
+
+.horizontal .text {
     margin-bottom: 3%;
 }
