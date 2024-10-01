@@ -245,7 +245,7 @@ section video:hover {
 
 .horizontal {
     margin: 4% 6%;
-    width: 75px; 
+    width: 750px; 
 }
 
 .horizontal .text {
@@ -279,7 +279,8 @@ section video:hover {
 }
 
 .horizontal .avocado {
-    margin-left: 585px;
+    margin-left: 580px;
+    
 }
 
 button {
