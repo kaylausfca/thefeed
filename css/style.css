@@ -109,6 +109,19 @@ h2 {
     font-size: 20px;
 }
 
+#friends a {
+    text-decoration: none;
+    color: #351F12;
+}
+
+#friends a:hover {
+    color: #CC401B;
+}
+
+#friends p:hover {
+    transform: scale(1.03);
+}
+
 ::-webkit-scrollbar {
     display: none;
   }
@@ -266,7 +279,7 @@ section video:hover {
 }
 
 .horizontal .avocado {
-    margin-left: 590px;
+    margin-left: 585px;
 }
 
 button {
