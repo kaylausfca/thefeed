@@ -16,7 +16,7 @@ body {
 
 header {
     text-align: center;
-    margin-top: 15%;
+    margin-top: 12%;
     justify-content: center;
 }
 
@@ -42,7 +42,7 @@ nav img:hover {
 
 main {
     background-color: #FAF3E3;
-    max-width: 50%;
+    max-width: 55%;
     margin-left: 33%;
     padding: 3%;
     display: flex;
@@ -63,13 +63,14 @@ section {
 }
 
 .vertical {
-    margin: 5%;
+    margin: 5% 0%;
     width: 365px;
 }
 
 .invertical {
     border: 1px dashed #7AAF9C;
     margin: 5%;
+    margin-bottom: 0%;
     padding: 1% 0%;
     width: 325px;
 }
@@ -94,6 +95,7 @@ section {
 .inhorizontal {
     border: 1px dashed #7AAF9C;
     margin: 2.5%;
+    margin-bottom: 0%;
     padding: 1% 0%;
     width: 700px;
 }
@@ -110,23 +112,58 @@ section {
     margin-top: 1%;
 }
 
-section img:hover {
-    opacity: 85%;
+.invertical img:hover {
+    opacity: 90%;
+}
+
+.inhorizontal img:hover {
+    opacity: 90%;
 }
 
 section video:hover {
-    opacity: 85%;
+    opacity: 90%;
 }
+
+
+/* ADD TO CART + avocado */
 
 .avocado {
     text-align: right;
     padding: 0%;
-    margin-right: 25px;
+    margin-right: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+    width: fit-content;
 }
 
-.avocado img:hover {
-    transform: scale(1.1);
+.vertical .avocado {
+    margin-left: 225px;
 }
+
+.horizontal .avocado {
+    margin-left: 600px;
+}
+
+
+.avocado p {
+    padding-right: 8px;
+    font-size: 15px;
+    color: #7AAF9C;
+}
+
+.avocado img {
+    opacity: 85%;
+}
+
+.avocado:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
 
 /* additional styling */
 
