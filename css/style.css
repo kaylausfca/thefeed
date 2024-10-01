@@ -4,7 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap'); 
 
 
-/* main sections/body */
+
+/* body + splash page header */
 
 body {
     background-color: #FAF3E3;
@@ -24,6 +25,9 @@ header img:hover {
     transform: scale(1.05);
 }
 
+
+/* nav */
+
 nav {
     background-color: #FAF3E3;
     max-width: 25%;
@@ -36,13 +40,86 @@ nav {
     margin-right: 1%;
 }
 
-nav img:hover {
+#gif {
+    margin-top: 15%;
+}
+
+#gif:hover {
     transform: scale(1.03);
 }
 
+#itemsincart {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    font-size: 18px;
+    color: #7AAF9C;
+    padding: 0% 5%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+#itemsincart img {
+    opacity: 85%;
+}
+
+input {
+    background-color: #FAF3E3;
+    width: 28px;
+    border: none;
+    margin-left: 5px;
+    color: #7AAF9C;
+    font-size: 18px;
+    font-family: "News Cycle", sans-serif;
+    font-style: normal;
+    appearance: none;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: none;
+}
+
+nav hr {
+    width: 170px;
+    margin: auto;
+}
+
+h2 {
+    font-family: "Gabarito", system-ui;
+    font-style: normal;
+    font-size: 50px;
+    font-weight: normal;
+    color: #CC401B;
+    text-align: center;
+    margin-bottom: 8%;
+    margin-top: 15%;
+}
+
+#friends {
+    border: 1px dashed #7AAF9C;
+    padding: 3%;
+    margin-left: 13%;
+    margin-right: 13%;
+    margin-bottom: 10%;
+    font-size: 20px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+
+
+/* main */
+
 main {
     background-color: #FAF3E3;
-    max-width: 55%;
+    max-width: 57%;
     margin-left: 33%;
     padding: 3%;
     display: flex;
@@ -52,140 +129,11 @@ main {
     justify-content: space-around;
 }
 
-
-/* sections */
-
-section {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin: 5% 2%;
-}
-
-.vertical {
-    margin: 5% 0%;
-    width: 365px;
-}
-
-.invertical {
-    border: 1px dashed #7AAF9C;
-    margin: 5%;
-    margin-bottom: 0%;
-    padding: 1% 0%;
-    width: 325px;
-}
-
-.invertical img {
-    background-color: #7AAF9C;
-    padding: 3%;
-    margin-top: 3%;
-}
-
-.invertical video {
-    background-color: #7AAF9C;
-    padding: 3%; 
-    margin-top: 3%; 
-}
-
-.horizontal {
-    margin: 4% 5%;
-    width: 740px; 
-}
-
-.inhorizontal {
-    border: 1px dashed #7AAF9C;
-    margin: 2.5%;
-    margin-bottom: 0%;
-    padding: 1% 0%;
-    width: 700px;
-}
-
-.inhorizontal img {
-    background-color: #7AAF9C;
-    padding: 1.5%;
-    margin-top: 1%;
-}
-
-.inhorizontal video {
-    background-color: #7AAF9C;
-    padding: 1.5%; 
-    margin-top: 1%;
-}
-
-.invertical img:hover {
-    opacity: 90%;
-}
-
-.inhorizontal img:hover {
-    opacity: 90%;
-}
-
-section video:hover {
-    opacity: 90%;
-}
-
-
-/* ADD TO CART + avocado */
-
-.avocado {
-    text-align: right;
-    padding: 0%;
-    margin-right: 12px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: right;
-    align-items: center;
-    width: fit-content;
-}
-
-.vertical .avocado {
-    margin-left: 225px;
-}
-
-.horizontal .avocado {
-    margin-left: 600px;
-}
-
-
-.avocado p {
-    padding-right: 8px;
-    font-size: 15px;
-    color: #7AAF9C;
-}
-
-.avocado img {
-    opacity: 85%;
-}
-
-.avocado:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-}
-
-
-
-/* additional styling */
-
-footer {
-    text-align: center;
-    margin: 10% 20% 0% 20%;
-}
-
-footer:hover {
-    transform: scale(1.05);
-}
-
 hr {
     width: 350px;
     height: 1px;
     background-color: #7AAF9C;
     border: none;
-}
-
-a {
-    text-decoration: none;
-    color: #CC401B;
 }
 
 h1 {
@@ -198,53 +146,16 @@ h1 {
     color: #CC401B;
 }
 
-h2 {
-    font-family: "Gabarito", system-ui;
-    font-style: normal;
-    font-size: 50px;
-    font-weight: normal;
-    color: #CC401B;
-    text-align: center;
-    padding: 1%;
-}
-
-::-webkit-scrollbar {
-    display: none;
-  }
-  
-
-/* ids & classes */
-
-#header {
+#title {
     margin: auto;
     margin-top: 1%;
     margin-bottom: 8%;
     width: 100%;
 }
 
-#gif {
-    margin-top: 20%;
-}
-
-#friends {
-    border: 1px dashed #7AAF9C;
-    padding: 3%;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-bottom: 10%;
-}
-
-.top-text {
-    color: #CC401B;
-}
-
-.subhead {
+#subtitle {
     font-size: 20px;
     color:#CC401B;
-}
-
-.names {
-    font-size: 20px;
 }
 
 .text {
@@ -267,10 +178,145 @@ h2 {
     margin: 0%;
 }
 
+
+
+/* sections */
+
+section {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 2%;
+}
+
+section img:hover {
+    opacity: 90%;
+}
+
+section video:hover {
+    opacity: 90%;
+}
+
+/* vertical sections */
+
+.vertical {
+    margin: 5% 0%;
+    width: 365px;
+}
+
 .vertical .text {
     margin-bottom: 6%;
+}
+
+.invertical {
+    border: 1px dashed #7AAF9C;
+    margin: 5%;
+    margin-bottom: 0%;
+    padding: 1% 0%;
+    width: 325px;
+}
+
+.invertical img {
+    background-color: #7AAF9C;
+    padding: 3%;
+    margin-top: 3%;
+}
+
+.invertical video {
+    background-color: #7AAF9C;
+    padding: 3%; 
+    margin-top: 3%; 
+}
+
+/* horizontal sections */
+
+.horizontal {
+    margin: 4% 5%;
+    width: 740px; 
 }
 
 .horizontal .text {
     margin-bottom: 3%;
 }
+
+.inhorizontal {
+    border: 1px dashed #7AAF9C;
+    margin: 2.5%;
+    margin-bottom: 0%;
+    padding: 1% 0%;
+    width: 700px;
+}
+
+.inhorizontal img {
+    background-color: #7AAF9C;
+    padding: 1.5%;
+    margin-top: 1%;
+}
+
+.inhorizontal video {
+    background-color: #7AAF9C;
+    padding: 1.5%; 
+    margin-top: 1%;
+}
+
+/* avocado button */
+
+.vertical .avocado {
+    margin-left: 225px;
+}
+
+.horizontal .avocado {
+    margin-left: 600px;
+}
+
+button {
+    background-color: #FAF3E3;
+    border: none;
+    text-align: right;
+    padding: 0%;
+    margin-right: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+    width: fit-content;
+    margin-top: 7px;
+}
+
+button p {
+    padding-right: 8px;
+    color: #7AAF9C;
+    font-size: 15px;
+    font-family: "News Cycle", sans-serif;
+    font-style: normal;
+}
+
+.avocado img {
+    opacity: 85%;
+}
+
+.avocado button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+
+/* footer */
+
+footer {
+    text-align: center;
+    margin: 10% 20% 0% 20%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #CC401B;
+}
+
+footer:hover {
+    transform: scale(1.05);
+}
+
+
